@@ -6,8 +6,8 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="gender"/>
-                <field name="age"/>
+                <field name="gender" />
+                <field name="age" />
                 <field name="salary" optional="1"/>
                 <field name="employee" optional="1"/>
                 <field name="description" optional="1"/>
@@ -34,7 +34,7 @@
                         <group>
                         </group>
                         <group>
-                            <field name="gender"/>
+                            <field name="gender" widget="radio"/>
                             <field name="age"/>
                         </group>
                         <group>
