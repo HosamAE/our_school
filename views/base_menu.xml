@@ -1,0 +1,16 @@
+<odoo>
+    <menuitem
+            id = "our_school_menu"
+            name = "School"
+    />
+    <menuitem
+            id = "in_our_school_menu"
+            name = "Our School"
+            parent = "our_school_menu"
+    />
+    <menuitem
+            id = "classroom_menu"
+            name = "class"
+            parent = "our_school_menu"
+    />
+</odoo>

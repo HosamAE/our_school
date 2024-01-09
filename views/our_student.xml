@@ -1,0 +1,70 @@
+<odoo>
+
+    <record id="student_tree_view" model="ir.ui.view">
+        <field name="name">student tree</field>
+        <field name="model">student</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="age"/>
+                <field name="academic_year"/>
+                <field name="class_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="student_form_view" model="ir.ui.view">
+        <field name="name">student form</field>
+        <field name="model">student</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="academic_year"/>
+                            <field name="class_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="student_search_view" model="ir.ui.view">
+        <field name="name">Student search</field>
+        <field name="model">student</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="age"/>
+                <field name="academic_year"/>
+                <field name="class_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="student_action" model="ir.actions.act_window">
+        <field name="name">Student</field>
+        <field name="res_model">student</field>
+    </record>
+
+    <menuitem
+            id="student_item"
+            name="Student"
+            parent="in_our_school_menu"
+            action="student_action"
+    />
+
+</odoo>
