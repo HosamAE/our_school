@@ -28,7 +28,6 @@
                     </div>
                     <group>
                         <group>
-                            <field name="gender"/>
                             <field name="age"/>
                         </group>
                         <group>
