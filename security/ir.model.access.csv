@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teacher,access_teacher,model_teacher,,1,1,1,1
-access_student,access_student,model_student,,1,1,1,1
-access_classroom,access_classroom,model_classroom,,1,1,1,1
+access_our_teacher,access_our_teacher,model_our_teacher,,1,1,1,1
+access_our_student,access_our_student,model_our_student,,1,1,1,1
+access_our_classroom,access_our_classroom,model_our_classroom,,1,1,1,1

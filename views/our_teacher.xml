@@ -2,22 +2,25 @@
 
     <record id="teacher_tree_view" model="ir.ui.view">
         <field name="name">Teacher tree</field>
-        <field name="model">teacher</field>
+        <field name="model">our.teacher</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="gender" />
-                <field name="age" />
+                <field name="gender"/>
+                <field name="age"/>
                 <field name="salary" optional="1"/>
-                <field name="employee" optional="1"/>
+                <field name="is_employee" optional="1"/>
+                <field name="hiring_date" optional="1"/>
+                <field name="experience_years" optional="1"/>
                 <field name="description" optional="1"/>
             </tree>
         </field>
     </record>
 
+
     <record id="teacher_form_view" model="ir.ui.view">
         <field name="name">Teacher form</field>
-        <field name="model">teacher</field>
+        <field name="model">our.teacher</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -38,8 +41,11 @@
                             <field name="age"/>
                         </group>
                         <group>
-                            <field name="employee"/>
-                            <field name="salary" invisible="employee == 0"/>
+                            <field name="is_employee"/>
+                            <field name="salary" invisible="is_employee == 0"/>
+                            <field name="hiring_date" invisible="is_employee == 0"/>
+                            <field name="experience_years" invisible="is_employee == 0"/>
+
                         </group>
                     </group>
                 </sheet>
@@ -49,14 +55,16 @@
 
     <record id="teacher_search_view" model="ir.ui.view">
         <field name="name">Teacher search</field>
-        <field name="model">teacher</field>
+        <field name="model">our.teacher</field>
         <field name="arch" type="xml">
             <search>
                 <field name="name"/>
                 <field name="gender"/>
                 <field name="age"/>
                 <field name="salary"/>
-                <field name="employee"/>
+                <field name="is_employee"/>
+                <field name="hiring_date"/>
+                <field name="experience_years"/>
                 <field name="description"/>
             </search>
         </field>
@@ -64,14 +72,7 @@
 
     <record id="teacher_action" model="ir.actions.act_window">
         <field name="name">Teachers</field>
-        <field name="res_model">teacher</field>
+        <field name="res_model">our.teacher</field>
     </record>
-
-    <menuitem
-            id="teacher_item"
-            name="Teacher"
-            parent="in_our_school_menu"
-            action="teacher_action"
-    />
 
 </odoo>

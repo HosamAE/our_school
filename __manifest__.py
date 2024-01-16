@@ -1,16 +1,16 @@
 {
     'name': 'Our School',
     'description': 'our school and what will we do',
-    'author': 'Hossam_Eissa',
+    'author': 'upward_HossE',
     'website': '',
     'version': '0.1',
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/base_menu.xml',
         'views/our_teacher.xml',
         'views/our_student.xml',
-        'views/classroom.xml'
+        'views/our_classroom.xml',
+        'views/base_menu.xml'
     ],
     'application': True,
     'category': 'Uncategorized',

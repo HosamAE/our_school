@@ -2,7 +2,7 @@
 
     <record id="student_tree_view" model="ir.ui.view">
         <field name="name">student tree</field>
-        <field name="model">student</field>
+        <field name="model">our.student</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -10,13 +10,14 @@
                 <field name="age"/>
                 <field name="academic_year"/>
                 <field name="class_id"/>
+                <field name="number_of_courses"/>
             </tree>
         </field>
     </record>
 
     <record id="student_form_view" model="ir.ui.view">
         <field name="name">student form</field>
-        <field name="model">student</field>
+        <field name="model">our.student</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -29,9 +30,13 @@
                     <group>
                         <group>
                             <field name="age"/>
+                            <field name="gender"/>
+                            <field name="check_old" invisible="1"/>
+
                         </group>
                         <group>
                             <field name="academic_year"/>
+                            <field name="number_of_courses" invisible = "check_old == 0"/>
                             <field name="class_id"/>
                         </group>
                     </group>
@@ -42,13 +47,14 @@
 
     <record id="student_search_view" model="ir.ui.view">
         <field name="name">Student search</field>
-        <field name="model">student</field>
+        <field name="model">our.student</field>
         <field name="arch" type="xml">
             <search>
                 <field name="name"/>
                 <field name="gender"/>
                 <field name="age"/>
                 <field name="academic_year"/>
+                <field name="number_of_courses"/>
                 <field name="class_id"/>
             </search>
         </field>
@@ -56,14 +62,7 @@
 
     <record id="student_action" model="ir.actions.act_window">
         <field name="name">Student</field>
-        <field name="res_model">student</field>
+        <field name="res_model">our.student</field>
     </record>
-
-    <menuitem
-            id="student_item"
-            name="Student"
-            parent="in_our_school_menu"
-            action="student_action"
-    />
 
 </odoo>

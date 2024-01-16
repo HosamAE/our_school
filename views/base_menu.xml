@@ -13,4 +13,24 @@
             name = "class"
             parent = "our_school_menu"
     />
+
+    <menuitem
+            id="classroom_item"
+            name="Classroom"
+            parent="classroom_menu"
+            action="our_school.classroom_action"
+    />
+    <menuitem
+            id="teacher_item"
+            name="Teacher"
+            parent="in_our_school_menu"
+            action="our_school.teacher_action"
+    />
+    <menuitem
+            id="student_item"
+            name="Student"
+            parent="in_our_school_menu"
+            action="our_school.student_action"
+    />
+
 </odoo>
