@@ -10,7 +10,7 @@ class OurClassroom(models.Model):
     number_of_student = fields.Integer(compute='_compute_number_of_student', store=True)
 
     teacher_ids = fields.Many2many("our.teacher", string="Teachers")
-    studgent_ids = fields.One2many("our.student", "class_id", string="Students")
+    student_ids = fields.One2many("our.student", "class_id", string="Students")
 
     @api.depends('student_ids')
     def _compute_number_of_student(self):
