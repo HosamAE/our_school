@@ -1,0 +1,36 @@
+[33mcommit a462dd570ba2df2385005c781b8f9a0063515b48[m[33m ([m[1;36mHEAD -> [m[1;32mSchool[m[33m)[m
+Author: Hossam Eissa <HossamA.Eissa@gmail.com>
+Date:   Tue Jan 16 16:07:22 2024 +0200
+
+    #changed the names 2 words at all \n #captalize strings \n #add some strings other \n ##doing the task  \n #student num <20  \n #age of student shoud be more than 5 less than 12 \n # invisible fields according to some states in selection field #check this field  \n\n##teacher \n #adding date field date of hiring and field compute the date by year \n #some other :\)
+
+[33mcommit 80fe4d9e4fd03bd91b02550c324afa7e89f67d00[m[33m ([m[1;31morigin/School-task[m[33m, [m[1;31morigin/School[m[33m)[m
+Author: Hossam Eissa <HossamA.Eissa@gmail.com>
+Date:   Tue Jan 9 16:23:07 2024 +0200
+
+    Update our_student.xml
+
+[33mcommit db0b5f97ba49c8d56a0f1648c1d7b22c0971b4e4[m
+Author: Hossam Eissa <HossamA.Eissa@gmail.com>
+Date:   Tue Jan 9 15:47:52 2024 +0200
+
+    our School and how it look
+    Update our_teacher.xml
+
+[33mcommit 933e19128dafa2b30077baff0435ada9326f74b8[m
+Author: Hossam Eissa <HossamA.Eissa@gmail.com>
+Date:   Tue Jan 9 15:28:24 2024 +0200
+
+    task-odoo
+
+[33mcommit b689a9deadd2b8527d4e1ae060e7d7d2d3c72bb6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Hossam Eissa <HossamA.Eissa@gmail.com>
+Date:   Tue Jan 9 14:14:56 2024 +0200
+
+    first commit
+
+[33mcommit 50653b053beec5e45d84c09ee7a6fe55619e0ebc[m
+Author: Hossam Eissa <HossamA.Eissa@gmail.com>
+Date:   Tue Jan 9 14:12:19 2024 +0200
+
+    Odoo-task
