@@ -28,9 +28,11 @@ class OurStudent(models.Model):
     def _check_permissible_age(self):
         for rec in self:
             if rec.age < 6:
-                raise exceptions.ValidationError("Sorry, This age is too small to join to our classroom")
+                raise exceptions.ValidationError(
+                    f"Sorry, in record ({rec.name}) the age is too small to join to our classroom")
             elif rec.age > 12:
-                raise exceptions.ValidationError("Sorry, This age is too old to join to our classroom")
+                raise exceptions.ValidationError(
+                    f"Sorry, in record ({rec.name}) thes age is too old to join to our classroom")
 
     @api.onchange('number_of_courses')
     def _onchange_number_of_courses(self):
